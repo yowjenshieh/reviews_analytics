@@ -14,3 +14,18 @@ sum_len = 0
 for d in data:
 	sum_len = sum_len + len(d)
 print('The average word count is', sum_len/len(data), 'per review.')
+
+#reviews each with fewer than 100 words
+new = []
+for d in data:
+	if len(d) < 100:
+		new.append(d)
+print('There are' ,len(new), 'reviews with fewer than 100 words.')
+
+#reviews with the word "good"
+good = []
+for d in data:
+	if 'good' in d:
+		good.append(d)
+print('There are', len(good), 'reviews with the word \"good\".')
+print(good[0])
