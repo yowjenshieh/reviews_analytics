@@ -31,8 +31,8 @@ print('There are', len(good), 'reviews with the word \"good\".')
 print(good[0])
 
 
-#文字計數
-wc = {} #wordcount
+#wordcount
+wc = {} #word_count
 for d in data:
 	words = d.split() #split default = whitespace
 	for word in words:
